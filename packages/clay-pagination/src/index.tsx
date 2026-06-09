@@ -5,8 +5,9 @@
 
 import {Pagination} from './Pagination';
 import {ClayPaginationWithBasicItems} from './PaginationWithBasicItems';
+import {PaginationWithIcons} from './PaginationWithIcons';
 
 export {Ellipsis} from './Ellipsis';
 export {Item} from './Item';
-export {Pagination, ClayPaginationWithBasicItems};
+export {Pagination, ClayPaginationWithBasicItems, PaginationWithIcons};
 export default Pagination;

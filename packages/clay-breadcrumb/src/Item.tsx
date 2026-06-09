@@ -15,6 +15,11 @@ interface IItem extends React.HTMLAttributes<HTMLLIElement> {
 	active?: boolean;
 
 	/**
+	 * Flag to indicate if the Breadcrumb item is disabled or not.
+	 */
+	disabled?: boolean;
+
+	/**
 	 * This value is used to be the target of the link.
 	 */
 	href?: string;
@@ -30,7 +35,7 @@ interface IItem extends React.HTMLAttributes<HTMLLIElement> {
 	onClick?: (event: React.SyntheticEvent) => void;
 }
 
-function Item({active, href, label, onClick, ...otherProps}: IItem) {
+function Item({active, disabled, href, label, onClick, ...otherProps}: IItem) {
 	return (
 		<li
 			className={classNames('breadcrumb-item', {
@@ -44,6 +49,7 @@ function Item({active, href, label, onClick, ...otherProps}: IItem) {
 				buttonType="button"
 				className="breadcrumb-link"
 				data-testid={`testId${label}`}
+				disabled={disabled}
 				href={active ? '#' : href}
 				onClick={(event: React.SyntheticEvent) => {
 					if (onClick) {

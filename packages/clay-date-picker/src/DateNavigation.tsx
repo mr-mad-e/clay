@@ -84,42 +84,22 @@ function ClayDatePickerDateNavigation({
 				</div>
 
 				<div className="date-picker-nav-item input-date-picker-year">
-					<Picker
-						UNSAFE_behavior="secondary"
+					<Select
 						aria-label={ariaLabels.selectYear}
-						className="form-control-sm"
-						data-testid="year-select"
 						disabled={disabled}
-						items={years}
-						native
-						onKeyDown={(
-							event: React.KeyboardEvent<HTMLButtonElement>
-						) => {
-							if (
-								event.shiftKey &&
-								(event.key === Keys.Up ||
-									event.key === Keys.Down)
-							) {
-								event.key =
-									event.key === Keys.Up
-										? 'PageUp'
-										: 'PageDown';
-							}
-						}}
-						onSelectionChange={(key) => {
+						name="year"
+						onChange={(event) =>
 							onMonthChange(
-								new Date(Number(key), currentMonth.getMonth())
-							);
-						}}
-						selectedKey={String(currentMonth.getFullYear())}
-						width={95}
-					>
-						{(item) => (
-							<Option key={item.value}>
-								{String(item.label)}
-							</Option>
-						)}
-					</Picker>
+								new Date(
+									Number(event.target.value),
+									currentMonth.getMonth()
+								)
+							)
+						}
+						options={years}
+						testId="year-select"
+						value={currentMonth.getFullYear()}
+					/>
 				</div>
 
 				<div className="date-picker-nav-controls date-picker-nav-item date-picker-nav-item-expand">

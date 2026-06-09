@@ -19,6 +19,7 @@ type Props = {
 	'items'?: Array<number>;
 	'onPageChange'?: (page?: number) => void;
 	'title'?: string;
+	label?: number;
 };
 
 export function Ellipsis({
@@ -27,6 +28,7 @@ export function Ellipsis({
 	disabledPages = [],
 	hrefConstructor,
 	items = [],
+	label,
 	onPageChange,
 	...otherProps
 }: Props) {
@@ -58,7 +60,7 @@ export function Ellipsis({
 						displayType="unstyled"
 						title={title}
 					>
-						...
+						{label ?? '...'}
 					</Button>
 				}
 			>

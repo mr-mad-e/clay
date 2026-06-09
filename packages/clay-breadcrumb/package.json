@@ -19,8 +19,8 @@
 		"react"
 	],
 	"license": "BSD-3-Clause",
-	"main": "src/index.tsx",
-	"name": "@clayui/breadcrumb",
+	"main": "lib/cjs/index.js",
+	"name": "clayui-breadcrumb",
 	"peerDependencies": {
 		"@clayui/css": "^3.165.0",
 		"react": "^16.0.0 || ^17.0.0 || ^18.0.0",

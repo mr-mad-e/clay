@@ -124,6 +124,7 @@ function Items({items}: ItemsProps) {
 				) : (
 					<Item
 						active={(item as TItem).active}
+						disabled={(item as TItem).disabled}
 						href={(item as TItem).href}
 						key={`breadcrumbItem${i}`}
 						label={(item as TItem).label}

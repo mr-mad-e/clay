@@ -40,6 +40,8 @@ interface IProps extends React.ComponentProps<typeof Pagination> {
 	 * Labels for the aria attributes
 	 */
 	ariaLabels?: {
+		first: string;
+		last: string;
 		link: string;
 		next: string;
 		previous: string;
@@ -107,6 +109,8 @@ export const ClayPaginationWithBasicItems = React.forwardRef(
 			activePage,
 			alignmentPosition,
 			ariaLabels = {
+				first: 'Go to first page',
+				last: 'Go to last page',
 				link: 'Go to page, {0}',
 				next: 'Go to the next page, {0}',
 				previous: 'Go to the previous page, {0}',
@@ -153,6 +157,25 @@ export const ClayPaginationWithBasicItems = React.forwardRef(
 
 		return (
 			<Pagination {...otherProps} ref={ref}>
+				<Pagination.Item
+					aria-label={ariaLabels.first}
+					as={internalActive === 1 ? 'div' : undefined}
+					data-testid="prevArrow"
+					disabled={internalActive === 1}
+					href={previousHref}
+					onClick={() => setActive(1)}
+					role={
+						previousHref || internalActive === 1
+							? undefined
+							: 'button'
+					}
+				>
+					<ClayIcon
+						spritemap={spritemap}
+						symbol="angle-double-left"
+					/>
+				</Pagination.Item>
+
 				<Pagination.Item
 					aria-label={
 						internalActive !== 1
@@ -229,6 +252,25 @@ export const ClayPaginationWithBasicItems = React.forwardRef(
 					}
 				>
 					<ClayIcon spritemap={spritemap} symbol="angle-right" />
+				</Pagination.Item>
+
+				<Pagination.Item
+					aria-label={ariaLabels.last}
+					as={internalActive === totalPages ? 'div' : undefined}
+					data-testid="nextArrow"
+					disabled={internalActive === totalPages}
+					href={nextHref}
+					onClick={() => setActive(totalPages)}
+					role={
+						nextHref || internalActive === totalPages
+							? undefined
+							: 'button'
+					}
+				>
+					<ClayIcon
+						spritemap={spritemap}
+						symbol="angle-double-right"
+					/>
 				</Pagination.Item>
 			</Pagination>
 		);

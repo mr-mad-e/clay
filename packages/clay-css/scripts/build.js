@@ -106,10 +106,10 @@ async function build() {
 		path.join(OUTPUT_DIRECTORY, 'images/icons')
 	);
 
-	copyRecursiveSync(
-		path.join(__dirname, '..', '..', 'LICENSES'),
-		path.resolve(__dirname, '..', './LICENSES')
-	);
+	// copyRecursiveSync(
+	// 	path.join(__dirname, '..', '..', 'LICENSES'),
+	// 	path.resolve(__dirname, '..', './LICENSES')
+	// );
 
 	const fileNames = ['atlas.scss', 'base.scss', 'cadmin.scss'];
 

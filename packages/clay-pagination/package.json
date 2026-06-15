@@ -20,8 +20,8 @@
 		"react"
 	],
 	"license": "BSD-3-Clause",
-	"main": "lib/cjs/index.js",
-	"name": "clayui-pagination",
+	"main": "src/index.tsx",
+	"name": "@clayui/pagination",
 	"peerDependencies": {
 		"@clayui/css": "^3.165.0",
 		"react": "^16.0.0 || ^17.0.0 || ^18.0.0",

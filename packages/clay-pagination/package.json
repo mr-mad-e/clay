@@ -20,8 +20,8 @@
 		"react"
 	],
 	"license": "BSD-3-Clause",
-	"main": "src/index.tsx",
-	"name": "@clayui/pagination",
+	"main": "lib/cjs/index.js",
+	"name": "clayui-pagination",
 	"peerDependencies": {
 		"@clayui/css": "^3.165.0",
 		"react": "^16.0.0 || ^17.0.0 || ^18.0.0",
@@ -35,5 +35,15 @@
 		"buildTypes": "cross-env NODE_ENV=production tsc --project ./tsconfig.declarations.json",
 		"test": "jest --config ../../jest.config.js"
 	},
-	"version": "3.165.0"
+	"version": "3.165.0",
+	"module": "lib/esm/index.js",
+	"exports": {
+		".": {
+			"types": "./lib/index.d.ts",
+			"import": "./lib/esm/index.js",
+			"require": "./lib/cjs/index.js"
+		}
+	},
+	"types": "lib/index.d.ts",
+	"ts:main": "src/index.tsx"
 }

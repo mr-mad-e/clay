@@ -255,6 +255,8 @@ export interface IProps<T extends Record<string, any> = Item>
 	 */
 	spritemap?: string;
 
+	icon?: React.ReactNode;
+
 	/**
 	 * The value property sets the current value (controlled).
 	 */
@@ -314,6 +316,7 @@ export const MultiSelect = React.forwardRef(function MultiSelectInner<
 		size,
 		sourceItems = null,
 		spritemap,
+		icon,
 		value: externalValue,
 		...otherProps
 	}: IProps<T>,
@@ -573,34 +576,36 @@ export const MultiSelect = React.forwardRef(function MultiSelectInner<
 					)}
 
 					{!disabled &&
-						!disabledClearAll &&
-						(value || !!items.length) && (
-							<ClayInput.GroupItem shrink>
-								<ClayButtonWithIcon
-									aria-label={clearAllTitle}
-									borderless
-									className="component-action"
-									displayType="secondary"
-									onClick={() => {
-										if (onClearAllButtonClick) {
-											onClearAllButtonClick();
-										}
-										else {
-											setItems([]);
-											setValue('');
-										}
+					!disabledClearAll &&
+					(value || !!items.length) ? (
+						<ClayInput.GroupItem shrink>
+							<ClayButtonWithIcon
+								aria-label={clearAllTitle}
+								borderless
+								className="component-action"
+								displayType="secondary"
+								onClick={() => {
+									if (onClearAllButtonClick) {
+										onClearAllButtonClick();
+									}
+									else {
+										setItems([]);
+										setValue('');
+									}
 
-										if (inputElementRef.current) {
-											inputElementRef.current.focus();
-										}
-									}}
-									outline
-									spritemap={spritemap}
-									symbol="times-circle"
-									title={clearAllTitle}
-								/>
-							</ClayInput.GroupItem>
-						)}
+									if (inputElementRef.current) {
+										inputElementRef.current.focus();
+									}
+								}}
+								outline
+								spritemap={spritemap}
+								symbol="times-circle"
+								title={clearAllTitle}
+							/>
+						</ClayInput.GroupItem>
+					) : (
+						icon
+					)}
 
 					<div className="sr-only">
 						<span id={ariaDescriptionId}>

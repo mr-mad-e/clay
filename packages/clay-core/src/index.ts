@@ -52,14 +52,14 @@ export {Provider, useProvider} from '@clayui/provider';
 
 export {default as Alert} from '@clayui/alert';
 
-export {default as Breadcrumb} from '@clayui/breadcrumb';
+export {default as Breadcrumb} from 'clayui-breadcrumb';
 
-export {default as DatePicker} from '@clayui/date-picker';
+export {default as DatePicker} from 'clayui-date-picker';
 
 export {
 	PaginationWithIcons,
 	ClayPaginationWithBasicItems as PaginationWithBasicItems,
-} from '@clayui/pagination';
+} from 'clayui-pagination';
 
 export {ClayPaginationBarWithBasicItems as PaginationBarWithBasicItems} from '@clayui/pagination-bar';
 
@@ -95,7 +95,7 @@ export {default as ProgressBar} from '@clayui/progress-bar';
 
 export {default as Toolbar} from '@clayui/toolbar';
 
-export {default as MultiSelect} from '@clayui/multi-select';
+export {default as MultiSelect} from 'clayui-multi-select';
 
 export {default as Link} from '@clayui/link';
 

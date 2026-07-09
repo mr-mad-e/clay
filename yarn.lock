@@ -1173,6 +1173,35 @@
     react-transition-group "^4.4.1"
     warning "^4.0.3"
 
+"@clayui/multi-select@^3.156.6":
+  version "3.165.0"
+  resolved "https://registry.yarnpkg.com/@clayui/multi-select/-/multi-select-3.165.0.tgz#1b9aed46587f5f31cba58a5739391bd6e34af8f0"
+  integrity sha512-sWxc/ONQDZ+TLhz+efI9XiZ4QY2e6HjiXMces+1UhhR05NFENmW80lqVCeH4OosCMCK6fs/iXdJ8SEhnJNL83g==
+  dependencies:
+    "@clayui/autocomplete" "^3.165.0"
+    "@clayui/button" "^3.165.0"
+    "@clayui/drop-down" "^3.165.0"
+    "@clayui/form" "^3.165.0"
+    "@clayui/icon" "^3.165.0"
+    "@clayui/label" "^3.165.0"
+    "@clayui/loading-indicator" "^3.165.0"
+    "@clayui/shared" "^3.165.0"
+    classnames "2.3.1"
+    fuzzy "^0.1.3"
+
+"@clayui/pagination@^3.156.6", "@clayui/pagination@^3.165.0":
+  version "3.165.0"
+  resolved "https://registry.yarnpkg.com/@clayui/pagination/-/pagination-3.165.0.tgz#da1b714044ac56334b90c2b41dcb926136a51dc7"
+  integrity sha512-widFFTkZoqSCqrRHjvjq6BvcLpfitlW4Spb62LNF5cO58jLARMmFHCK+XauK/fOquDoqN61tVySHhh/CN5kWtw==
+  dependencies:
+    "@clayui/button" "^3.165.0"
+    "@clayui/core" "^3.165.0"
+    "@clayui/drop-down" "^3.165.0"
+    "@clayui/icon" "^3.165.0"
+    "@clayui/link" "^3.165.0"
+    "@clayui/shared" "^3.165.0"
+    classnames "2.3.1"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"

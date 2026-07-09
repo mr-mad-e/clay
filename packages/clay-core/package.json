@@ -4,11 +4,11 @@
 	],
 	"dependencies": {
 		"@clayui/alert": "^3.165.0",
-		"@clayui/breadcrumb": "^3.165.0",
+		"clayui-breadcrumb": "^3.165.0",
 		"@clayui/button": "^3.165.0",
 		"@clayui/card": "^3.165.0",
 		"@clayui/data-provider": "^3.165.0",
-		"@clayui/date-picker": "^3.165.0",
+		"clayui-date-picker": "^3.165.0",
 		"@clayui/drop-down": "^3.165.0",
 		"@clayui/empty-state": "^3.165.0",
 		"@clayui/form": "^3.165.0",
@@ -19,8 +19,8 @@
 		"@clayui/list": "^3.165.0",
 		"@clayui/loading-indicator": "^3.165.0",
 		"@clayui/modal": "^3.165.0",
-		"@clayui/multi-select": "^3.165.0",
-		"@clayui/pagination": "^3.165.0",
+		"clayui-multi-select": "^3.165.0",
+		"clayui-pagination": "^3.165.0",
 		"@clayui/pagination-bar": "^3.165.0",
 		"@clayui/panel": "^3.165.0",
 		"@clayui/progress-bar": "^3.165.0",
@@ -63,7 +63,7 @@
 		"buildTypes": "cross-env NODE_ENV=production tsc --project ./tsconfig.declarations.json",
 		"test": "jest --config ../../jest.config.js"
 	},
-	"version": "3.165.1",
+	"version": "3.165.3",
 	"module": "lib/esm/index.js",
 	"exports": {
 		".": {

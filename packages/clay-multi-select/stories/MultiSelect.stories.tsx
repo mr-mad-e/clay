@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
  */
 
-import ClayButton from '@clayui/button';
+import ClayButton, {ClayButtonWithIcon} from '@clayui/button';
 import {FetchPolicy, NetworkStatus, useResource} from '@clayui/data-provider';
 import ClayForm, {ClayInput} from '@clayui/form';
 import ClayIcon from '@clayui/icon';
@@ -59,6 +59,17 @@ export function Default(args: any) {
 				aria-labelledby="multi-select-label"
 				disabled={args.disabled}
 				disabledClearAll={args.disabledClearAll}
+				icon={
+					<ClayInput.GroupItem shrink>
+						<ClayButtonWithIcon
+							borderless
+							className="component-action"
+							displayType="secondary"
+							outline
+							symbol="caret-bottom"
+						/>
+					</ClayInput.GroupItem>
+				}
 				id="multiSelect"
 				inputName="myInput"
 				isValid={args.isValid}

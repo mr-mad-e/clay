@@ -50,24 +50,20 @@ export {
 } from '@clayui/modal';
 export {Provider, useProvider} from '@clayui/provider';
 
+// extra
 export {default as Alert} from '@clayui/alert';
-
+export {default as Autocomplete} from '@clayui/autocomplete';
 export {default as Breadcrumb} from 'clayui-breadcrumb';
-
 export {default as DatePicker} from 'clayui-date-picker';
-
 export {
 	PaginationWithIcons,
 	ClayPaginationWithBasicItems as PaginationWithBasicItems,
 } from 'clayui-pagination';
-
 export {ClayPaginationBarWithBasicItems as PaginationBarWithBasicItems} from '@clayui/pagination-bar';
-
 export {
 	default as Card,
 	ClayCardWithNavigation as CardWithNavigation,
 } from '@clayui/card';
-
 export {
 	default as Form,
 	ClayInput as Input,
@@ -76,29 +72,16 @@ export {
 	ClayRadioGroup as RadioGroup,
 	ClaySelect as Select,
 } from '@clayui/form';
-
 export {default as Tabs} from '@clayui/tabs';
-
 export {ClayIconSpriteContext as IconSpriteContext} from '@clayui/icon';
-
 export {default as List} from '@clayui/list';
-
 export {ClayTooltipProvider as TooltipProvider} from '@clayui/tooltip';
-
 export {default as LoadingIndicator} from '@clayui/loading-indicator';
-
 export {default as Panel} from '@clayui/panel';
-
 export {default as Label} from '@clayui/label';
-
 export {default as ProgressBar} from '@clayui/progress-bar';
-
 export {default as Toolbar} from '@clayui/toolbar';
-
 export {default as MultiSelect} from 'clayui-multi-select';
-
 export {default as Link} from '@clayui/link';
-
 export {default as EmptyState} from '@clayui/empty-state';
-
 export {default as DropDown} from '@clayui/drop-down';

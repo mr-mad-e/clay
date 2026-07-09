@@ -4,6 +4,7 @@
 	],
 	"dependencies": {
 		"@clayui/alert": "^3.165.0",
+    	"@clayui/autocomplete": "^3.165.0",
 		"clayui-breadcrumb": "^3.165.0",
 		"@clayui/button": "^3.165.0",
 		"@clayui/card": "^3.165.0",
@@ -63,7 +64,7 @@
 		"buildTypes": "cross-env NODE_ENV=production tsc --project ./tsconfig.declarations.json",
 		"test": "jest --config ../../jest.config.js"
 	},
-	"version": "3.165.3",
+	"version": "3.165.4",
 	"module": "lib/esm/index.js",
 	"exports": {
 		".": {

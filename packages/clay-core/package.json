@@ -27,6 +27,7 @@
 		"@clayui/progress-bar": "^3.165.0",
 		"@clayui/provider": "^3.165.0",
 		"@clayui/shared": "^3.165.0",
+		"@clayui/sticker": "^3.165.0",
 		"@clayui/table": "^3.165.0",
 		"@clayui/tabs": "^3.165.0",
 		"@clayui/toolbar": "^3.165.0",
@@ -64,7 +65,7 @@
 		"buildTypes": "cross-env NODE_ENV=production tsc --project ./tsconfig.declarations.json",
 		"test": "jest --config ../../jest.config.js"
 	},
-	"version": "3.165.4",
+	"version": "3.165.5",
 	"module": "lib/esm/index.js",
 	"exports": {
 		".": {

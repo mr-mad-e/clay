@@ -85,3 +85,4 @@ export {default as MultiSelect} from 'clayui-multi-select';
 export {default as Link} from '@clayui/link';
 export {default as EmptyState} from '@clayui/empty-state';
 export {default as DropDown} from '@clayui/drop-down';
+export {default as Sticker} from '@clayui/sticker';
